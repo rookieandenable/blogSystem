@@ -1,28 +1,149 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="black_line"></div>
+    <div class="main">
+      <router-link to="/"></router-link>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+  name: "app"
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+a {
+  color: #545455;
+  cursor: pointer;
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px 0 15px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 18px;
+  }
+}
+
+h2 {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 16px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: 14px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  h4 {
+    font-size: 12px;
+  }
+}
+
+h5 {
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  h5 {
+    font-size: 10px;
+  }
+}
+
+h6 {
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  h6 {
+    font-size: 8px;
+  }
+}
+
+p {
+  margin: 0 0 25px 0;
+}
+
+body {
+  background-color: #f5f7f9;
+}
+
+.black_line {
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+
+#main {
+  overflow: hidden;
+  width: 960px;
+  text-align: center;
+  margin: auto;
+}
+
+#content {
+  background: white;
 }
 </style>
