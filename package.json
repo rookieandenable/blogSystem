@@ -14,7 +14,7 @@
     "element-ui": "^2.11.1",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.1.2",
     "lodash": "^4.17.15",
     "marked": "^0.7.0",
     "mongoose": "^5.6.10",
